@@ -1,0 +1,1 @@
+{"name":"noctis-vortex","version":"0.3.0","private":true,"type":"module","scripts":{"dev":"vercel dev"},"dependencies":{"openai":"^5.20.0"},"devDependencies":{"vercel":"^48.0.0"}}

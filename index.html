@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090812">
+  <title>亗NOCTIS々VORTEX亗 — Powered by S.A.I</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Noctis Vortex home">
+      <span class="brand-mark">亗</span>
+      <span>NOCTIS<span class="brand-accent">々</span>VORTEX</span>
+    </a>
+    <div class="topbar-right">
+      <span class="engine-status"><i></i> CREATIVE CORE READY</span>
+      <span class="version">EARLY ACCESS · 0.1</span>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow"><span class="eyebrow-line"></span> YOUR CREATIVE UNIVERSE</div>
+      <h1>Make your vision<br><span>come alive.</span></h1>
+      <p class="hero-copy">An AI-powered creative studio for turning your footage, references and ideas into original cinematic stories.</p>
+      <div class="powered">POWERED BY <strong>S.A.I</strong><span>SUPER ARTIFICER INTELLIGENCE</span></div>
+    </section>
+
+    <section class="workspace">
+      <div class="section-heading">
+        <div>
+          <div class="section-kicker">01 / CREATION STUDIO</div>
+          <h2>Start a new project</h2>
+        </div>
+        <span class="private-tag">◈ YOUR WORKSPACE</span>
+      </div>
+
+      <div class="mode-grid" role="group" aria-label="Choose creation mode">
+        <button class="mode-card selected" data-mode="Picture to Movie" type="button">
+          <span class="mode-icon">✧</span><strong>Picture to Movie</strong>
+          <small>Build a cinematic moment from an image.</small>
+        </button>
+        <button class="mode-card" data-mode="Footage to Film" type="button">
+          <span class="mode-icon">▶</span><strong>Footage to Film</strong>
+          <small>Shape your clips into a complete story.</small>
+        </button>
+        <button class="mode-card" data-mode="Season Maker" type="button">
+          <span class="mode-icon">▤</span><strong>Season Maker</strong>
+          <small>Plan episodes from your recorded footage.</small>
+        </button>
+        <button class="mode-card" data-mode="Style Clone" type="button">
+          <span class="mode-icon">⟡</span><strong>Style Clone</strong>
+          <small>Study a reference edit and adapt its techniques.</small>
+        </button>
+      </div>
+
+      <div class="editor-grid">
+        <div class="panel upload-panel">
+          <div class="panel-title">
+            <div><span class="number">A</span><h3>Your media</h3></div>
+            <span class="optional">UPLOAD</span>
+          </div>
+          <label class="dropzone" for="mediaInput">
+            <span class="upload-symbol">↑</span>
+            <strong>Choose photos or videos</strong>
+            <span>Use your own footage as the foundation.</span>
+            <em>Browse files</em>
+          </label>
+          <input id="mediaInput" type="file" accept="image/*,video/*" multiple hidden>
+          <div id="mediaList" class="file-list"><span class="empty-state">No media selected yet.</span></div>
+
+          <div class="panel-title reference-title">
+            <div><span class="number">B</span><h3>Reference edit</h3></div>
+            <span class="optional">OPTIONAL</span>
+          </div>
+          <label class="reference-upload" for="referenceInput">
+            <span>＋</span> Add a reference video
+          </label>
+          <input id="referenceInput" type="file" accept="video/*" hidden>
+          <div id="referenceName" class="file-list"><span class="empty-state">No reference selected.</span></div>
+          <p class="microcopy">Use references you have permission to use. S.A.I is intended to learn editing techniques, not copy another creator's footage or identity.</p>
+        </div>
+
+        <div class="panel direction-panel">
+          <div class="panel-title">
+            <div><span class="number">C</span><h3>Creative direction</h3></div>
+            <span class="optional">YOUR IDEA</span>
+          </div>
+          <label class="field-label" for="ideaInput">Describe what you imagine</label>
+          <textarea id="ideaInput" placeholder="Example: Turn my clips into a suspenseful short film. Start quietly, build tension, use dramatic close-ups, and finish with an unexpected reveal..."></textarea>
+
+          <div class="two-fields">
+            <div>
+              <label class="field-label" for="moodInput">Mood</label>
+              <select id="moodInput">
+                <option>Cinematic</option><option>Dark and suspenseful</option>
+                <option>Action-packed</option><option>Emotional</option>
+                <option>Dreamlike</option><option>Documentary</option>
+              </select>
+            </div>
+            <div>
+              <label class="field-label" for="formatInput">Format</label>
+              <select id="formatInput">
+                <option>Choose later</option><option>Vertical · 9:16</option>
+                <option>Widescreen · 16:9</option><option>Square · 1:1</option>
+              </select>
+            </div>
+          </div>
+
+          <button id="planButton" class="primary-button" type="button">
+            <span>✦</span> DEVELOP MY CREATIVE PLAN <span>→</span>
+          </button>
+          <p class="microcopy">This starter build creates a project brief. AI analysis and video rendering will be connected in later stages.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="output" class="output panel" aria-live="polite">
+      <div class="output-heading">
+        <div><div class="section-kicker">02 / DIRECTOR'S DESK</div><h2>Your project brief</h2></div>
+        <span class="draft-label">AWAITING IDEA</span>
+      </div>
+      <p class="output-placeholder">Your creative plan will appear here when you are ready.</p>
+    </section>
+
+    <footer>
+      <span>亗 NOCTIS々VORTEX亗</span>
+      <span>POWERED BY S.A.I · SUPER ARTIFICER INTELLIGENCE</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
